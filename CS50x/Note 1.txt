@@ -1,0 +1,118 @@
+C
+---
+Writing code:
+- Correctness, or whether our code works correctly, as intended
+- Design, or a subjective measure of how well-written our code is, based on how efficient it is
+and how elegant or logically readable it is, without unecessary repeatition.
+- Style, or how aethetically formatted our code,
+---
+CS50 IDE
+- IDE: integrated development enviroment
+- CLI: command-line interface
+- GUI: graphical user interface
+---
+Compiling
+we'll compile our code before we can run it.
+- source code: in character we can read;
+- machine code: patterns of zeros and ones that our computer can directly understand 
+- compiling: take source code as input; and produce machine code as an output
+- we'll type in "make hello" => compiling
+- we'll type "./hello" "."~ the current folder
+---
+Functions and arguments
+- Functions are small actions or verbs that we can use in our program to do something, 
+and the inputs to functions are called arguments.
+- Kinds of Outputs: side effects, return values
+- Library: set of code already written
+- %s: format code
+- =: assignment
+- string: type
+- a more descriptive name will help us understand its purpose better than a shorter name
+- \n: escape sequence
+---
+Main, header files
+- Header files .h : set of code (a library)
+- #include <stdio.h> ~ standard input/output
+---
+Tools
+- help50: get advice that might be more understandable
+- style50: to see suggestions for new lins and indentation
+- comments: //
+- check50: After we run, we'll see some output telling us wether our code passed relevant tests
+---
+Commands
+- CS50 IDE is a virtual computer in the cloud, we can also run commands available in Linux,
+an operating system like macOS or Windows.
+- ls: short for list, to see a list of files and folder in the current folder
+- rm: remove files
+- mv: move ~ rename files
+- mkdir: make directory
+- cd: change directory
+- folder inside ~, 	~ stands for our home directory, or our account's default, top-level folder
+- .. ~ parent folder
+- . ~ current directory
+---
+Types, format codes
+- Type:
+	bool
+	char, a single ASCII character like a or 2
+	double, a floating-point value with more digits than a float
+	float, a floating-point value, or real number with a decimal value
+	int, integers 
+	long, integers more bits
+	string, a string of characters
+- CS50:
+	get_char
+	get_double
+	get_float
+	get_int
+	get_long
+	get_string
+- printf:
+	%c for chars
+	%f %d for floats, doubles
+	%i for ints
+	%li for longs
+	%s for string
+---
+Operators, limitations, truncation
+- Mathematical operators: + - * / %(remainder)
+
+---
+Variables, syntactic sugar
+- variable int counter = 0
+- syntactic suger: counter += 1;
+---
+Conditions
+- || : or
+- && : and
+---
+Boolean expression, loops
+- infinite loop
+---
+Mario
+---
+Memory, imprecision, and overflow
+- Our computer has memory, in hardware chips called RAM, random-access memory.
+Our program use that RAM to store data while they're running, but that memory is finite.
+- %.50f, we can specify the number of decimal places displayed
+- floating-point imprecision: where we don't have enough bits to store all possible values
+- integer overflow: 8 ~ 1000, if we have 3 bits, 8 => 000
+- Y2K problem: calendar year stored by two digits => confusion 1900 ~ 2000
+- 32 bit ~ count the number of seconds since January 1st, 1970. => 2038 we'll reach that limit
+
+---
+Personal Access Token
+
+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
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+- a hexadecima digi = 4 bits 
+- 2 digit hexadecima ~ a byte ~ 8 bits ~ 
+- a bitmap as a 2-dimensianal array of pixels
+- the image is an array of rows, each row is an array of pixels
+---
+Grayscale
+00 00 00 ~ black
+- So long as the red = green = blues => result will be varying shades of gray
+	+ higher values meaning lighter shader (closer to white)
+	+ lower values meaning darker shades (closer to black)
+- take average of the red, green, and blue values to determine what shade of grey
+---
+Reflection
+- So any pixels on the left side of the image should end up on the right, and vice versa
+---
+Blur
+- Bluring or softening an image/
+- Use : box blur:  - which works by taking each pixel and, for each color value, giving
+a new value by averaging the color values of neighboring pixels
+	- the new value of each pixel would be the average of the values of all of the pixels that are within 1
+	row and column of the orginal pixel.
+---
+Edges
+- Edge or corner
+- In AI algorithms for image processing, it is often useful to detect edges in an image:
+lines in the image that creat a boundary between one object and another.
+- Use SOBEL OPERATOR:
+	- 3x3 grid of pixels (surrounds that pixel)
+	- The new value of each pixel by taking a weighted sum of the values for the surrounding pixels
+		- We're multiplying the pixels to the right of the target pixel by a positive number, and
+		and multiplying the pixels to the lef of the target pixel by a negative number
+		- We take the sum. If the pixels on the right are a similar color to the pixels on the left
+		the result will be close to 0.
+		- SOBEL FILTER: combines into a final value by calculating the square root
+

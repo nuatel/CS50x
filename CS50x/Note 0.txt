@@ -1,0 +1,73 @@
+- Component of Super Mario
+- A web application called CS50 Finance
+- Very own final project
+---
+What is computer science?
+1. taking some input (details about our problem) 
+2. generate some output (the solution to our problem)
+3. The “black box” in the middle is computer science, or the code we’ll learn to write.
+
+- problem solving 
+	+ represent inputs and outputs
+	+ store information
+	+ work with information 
+
+---
+Representing
+- numbers: binary => transitors
+- text: numbers map to letter/characters (ASCII, Unicode)
+- Image, video, sounds: 
+	+ colors (RGB: the amount of red, green, and blue) ~ three bytes;
+	+ pixels = three bytes
+	+ resolution = number of pixels
+	+ videos = more images
+	+ sounds = numbers ~ (notes, durations, sound frequencies)
+---
+Algorithms
+- black box
+- correct
+- bug
+- the efficiency of each of thoses algorithms
+	- linear
+	- logarithmic (log2n, or log base 2 of n, we're deviding the problem by two with each step)
+- care: correct + design + other factors (efficiency)
+---
+Pseudocode
+- a representation of our algorithm in human language
+	+ Functions
+	+ Conditions
+	+ Boolean expressions	
+	+ Loops
+---
+Scratch
+- a graphical programming language
+	+ abstraction
+	+ implementation details
+
+---
+Project
+Baby steps: 
+1. write a bit of code
+2. test
+3. write a bit more
+4. test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

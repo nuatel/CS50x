@@ -1,0 +1,70 @@
+1. Hexadecimal
+- In turns out that, by convention, the addresses for memory use the counting system hexadecimal,
+or base-16, where there are 16 digits: 0-9, and A-F as equivalents to 10 - 15
+- 0A = 10 , 0F = 16
+- 10 = 16
+- FF = 16^1 * 15 + 16^0 * 15 = 240 + 15 = 255, which is the same maximum value with 8 bits of binary.
+So two digits in hexadecimal can conveniently represent the value with 8 bits of binary. (Each digit in
+hexadecima, with 16 values, map to four bits in binary)
+- Application: RGB color system
+- Application: We'll use hexadecimal for each address or location.
+- 2 digit in hexdecima ~ 04bit in binary
+----
+2. Addresses
+- Location * ; address &
+- 4 bytes: 0x12345678
+- We can see the address with the & operator ~ get the address of this variable
+		int n = 50;
+		int *p = &n;
+		char *s = "HI!"
+	- &operator ~ address of this variable
+	- %p the format code for an address
+	- * operator: we "go to" the location that a pointer is pointing to
+	
+
+----
+3. Pointers
+- A variable that stores an address is called A POINTER
+- We can use the * operator to declare a vairable that we want to be a pointer;
+	- Since p is a variable itself, it's somewhere in memory, and the values stored there is the address of n
+	- Modern computer systems are "64-bit", meaning that they use 64 bits to address memory,
+	so a pointer will in reality be 8 bytes, twice as big as an interger of 4 bytes.
+
+----
+4. Strings
+- A variable declare with string s = "HI!"; will be stored one character at a time
+- But it turns out that each character, since it's stored in memory, also has some unique address, 
+and s is actually just a pointer with the address of the first charecter.
+
+----
+5. Pointer arithmetic
+	*s goes to the address stored in s
+	we can even try to go to addresses in memory that we shouldn't, like with *(s+1000),
+and when we run our program, we'll get a segmentation fault, or crash as a result of our program touching memory
+in a segment it shouldn't have.
+
+----
+6. Compare and copy
+- Each "string" is a pointer
+- char *s (is pointer) => *s - address ~ s - values
+- char *t = s => t is poing to s values
+- t and s same values => change values is same
+----
+7. Valgrind
+- int *it_is_pointer = values
+- *pointer = values
+- &pointer = address
+- poiter = pointer (address)
+----
+8. Swap
+----
+9. Memory layout
+- machine code
+- global variables:
+- heap: the heap section is an empty area from where malloc can get free memory for our program to use.
+As we call malloc, we start allocating memory from the top down.
+- stack: setion is used by functions in our program as they are called, and grows upwards
+----
+10. Graphics
+- 
+

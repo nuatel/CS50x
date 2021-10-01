@@ -1,0 +1,55 @@
+Compiling
+- Make ~ a program that call clang (a compiler)
+
+- Preprocessing: #include
+- Compliling: converts to assembly code
+- Assembling: converts to machine code (binary)
+- Linking: comiled versions of libraries
+
+=> Four steps have been abstracted away by make
+---
+Debugging
+---
+Memory
+- bool 1 byte
+- char 1 byte
+- double 8 bytes
+- float 4 bytes
+- int 8 bytes
+- long 8 bytes
+- string ? bytes
+- RAM (random-access memory): that stores data for short-term use, like a program's code while it's 
+running, or a file while it's open.
+- RAM is much faster, volatile, or requires power to keep data stored;
+	RAM ~ grid
+	Byte ~ a box (milions or bilions of bytes per chip)
+---
+Arrays
+int scores[3]
+constant: const
+---
+Characters
+character is printed out, and relaize that these character are stored in memory like mumbers
+
+---
+Strings
+- Array os characters
+- A string ends with a special character. '\0' , a byte with all bits set to 0.
+- With C, our code has ability to access or change memory, which is both powerful and dangerous
+- #include <string.h> = strlen(s)
+---
+Command-line arguments
+- argc: argument count
+- argv: argument vector
+---
+Applications
+- Work with string in our programs
+- Work with code written by others in libraries
+	Cryptography is the art of scrambling, or hiding information. 
+	If we wanted to send a message to someone, we might want to encrypt, 
+	or somehow scramble that message so that it would be hard for others to read. 
+	The original message, or input to our algorithm, is called plaintext, 
+	and the encrypted message, or output, is called ciphertext. 
+	And the algorithm that does the scrambling is called a cipher. 
+	A cipher generally requires another input in addition to the plaintext.
+	A key, like a number, is some other input that is kept secret.

@@ -1,0 +1,43 @@
+sample: numbers that represent the values of some audio signal at a particular point in time
+
+---
+WAV files:
+- a common file format for representing audio
+- store audio as a sequence of "sample"
+- begin with a 44-byte "header" contains information about 
+	+ the size of the file
+	+ number of sample per second
+	+ size of each sample
+- after the header, the WAV file contains a squence of sample
+	+ each a single 2-byte (16-bit) integer representing the audio signal at 
+	a particular point in time.
+- Scaling each sampe value by a given facter => changing the volumne of the audio
+---
+Types
+- stdint.h : are declarations of a number of other types
+	uint8_t: is a type that stores an 8-bit unsigned integer (WAV file's header)
+	int16_t: is a type that stores a 16-bit signed integer (Audio in WAV files)
+---
+Implementation Details
+- Changees the volume of a sound file
+- fread function:
+	- ptr: a pointer to the location in memory to store data (when reading from a file)
+	or from wich to write data (when writing data to a file
+	- size: the number of bytes in an item of data
+	- nmemb: the number of data (each of size bytes) to read or write
+	- stream: the file pointer to be read or written to
+- ...
+- 03 command-line arguments: input oupt factor
+	input: name of the orginal audio file
+	output: name of the new audio file
+- step 1: read the header from the input file => write the header to the output file (44 bytes long)
+	- long 44 bytes 
+	- header 
+- step 2: read the rest of the data, one 16-bit (2-byte) sample at a time
+-------------------------------
+WAV files:
+- One 44-byte header
+- Many 2-byte samples
+	- to change the volume of a sample, multiply the sample by a number
+
+

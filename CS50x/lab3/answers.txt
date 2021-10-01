@@ -1,0 +1,12 @@
+sort1 uses: bubble sort
+
+How do you know?: In reversed dataset, worse case of selection sort, running times increase in squared level of datasize.
+Furthermore,in sorted dataset, best case of selection, running times increase in linear level of datasize.
+
+sort2 uses: merge sort
+
+How do you know?: In three case: sort1 maintains averaged running times
+
+sort3 uses: selection sort
+
+How do you know?: Use the exclusion method.

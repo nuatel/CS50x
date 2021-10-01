@@ -1,0 +1,27 @@
+Tally: 
+- Voters have indicated all - Pair - Who the preferred candidate + margin
+Sort:
+- Sort pairs = number of voters who prefer the preferred candidate
+Lock:
+- Strongest pair (does not create a cycle in graph)
+---------------
+Code
+1. preferences[i][j] number of voter preffer candidat i over candidate j
+2. locked[i][j] candidate graph: true represents the existence of an edge pointing from i to j
+(adjacency matrix)
+3. pair ~ a pair of candidates: winner and loser
+4. global pair_count and candidate_count
+5. main 
+	1. determining the number of candidates
+	2. loops through locked graph and sets the values to false
+	3. loops over all the voters and collects their preferences in ranks
+		ranks[i] preference for the voter
+		ranks 	=>	record_preference function	=> the global preference variable
+		add pairt => sort pairs => lock pairs
+		print winner
+- Vote function
+	Rank 1: Alice
+	Rank 2: Charlie
+	Rank 3: Bob
+	ranks[Alice, Charlie, Bob]
+	preferences[]

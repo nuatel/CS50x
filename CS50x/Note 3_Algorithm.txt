@@ -1,0 +1,112 @@
+Last week
+- Solve problems, or bugs, debugger, a tool look at values in memory
+- Memory visualizing bytes in a grid and storing values in each box, or byte,
+with variables and arrays.
+---
+Searching
+- In turns out that, with arrays, a cumputer can't look at all of the elements at once. 
+Instead, a computer can only to look them one a time, though the order can be arbitrary.
+- Searching is how we solve the problem of finding a particular value.
+- Running time, or how long an algorithm takes to run given some size of input.
+---
+Big O
+- Searching linearly - one page at a time
+- Searching logarithmically, dividing the problem in half each time
+- Running times are for the worst case.
+- Big O notation ~ on the order of
+	- O(n^2) 
+	- O(n log n) 
+	- O (n) - searching one page at a time, in order
+	- O (log n) - dividing the phone book in half each time
+	- O (1) - An algorithm that take a constant number of steps, regardless of how big the problem is
+- Big Omega notation ~ which is the lower bound of number of steps for our algorithm.
+	- Omega(1) - Searching in a phone book, since we might find our name on the first page we check
+---
+Linear search, binary search
+- Linear search: O(n) Omega(1)
+	For i from 0 to n–1
+   	 	If number behind i'th door
+        		Return true
+	Return false
+- Binary search (if numbers behind the doors are sorted): O(logn) Omega(1)
+	If no doors
+    	     Return false
+	If number behind middle door
+	    Return true
+	Else if number < middle door
+	    Search left half
+	Else if number > middle door
+ 	    Search right half
+- We turned off the light bulbs at a frequency of one hertz, or cycle per second, 
+and a processor’s speed might be measured in gigahertz, or billions of operations per second.
+---
+Structs
+
+typedef struct
+{
+    string name;
+    string number;
+}
+person;
+
+- with structs, we can be a little more confident that we won't have human errors in our program
+
+---
+Sorting
+- With a sorted list, we can use binary search for efficiency, but it might take more time to write a sorting algorithm for that efficiency,
+so sometimes we'll encounter the tradeoff of time it takes a human to write a program compared to the time it takes a computer to run some
+algorithm.
+- Other tradeoffs we’ll see might be time and complexity, or time and memory usage. 
+---
+Selection sort
+-	For i from 0 to n–1
+    	Find smallest item between i'th item and last item
+    	Swap smallest item with i'th item
+- We started with having to look at all n elements, then only n-1, then n-2:
+- O(n^2)
+---
+Bubble sort
+	Repeat until sorted
+    		For i from 0 to n–2
+        		If i'th and i+1'th elements out of order
+            			Swap them
+- We can stop as soon as the list is sorted, since we can just remember whether we can made
+any swaps. If not, the list must be sorted already.
+- We have n-1 comparisions in the loop, and at most n-1 loops
+- O(n^2)
+---
+Recursion
+- Recursion is the ability for a function to call itself.
+- 
+---
+Merge sort
+If only one number
+  Return
+Else
+    Sort left half of number
+    Sort right half of number
+    Merge sorted halves
+
+- Merge the two lists for a final sorted list by taking the smallest element at the front of
+each list, one at a time.
+- Each number was moved from one shelf to another three times
+
+- Each shelf required n steps, and there were only logn shelves needed, so we multiply those
+factors together. Our total running time for binary search is O(lnogn):
+
+- Merge sort is likely to be faster than selection sort or bubble sort.
+
+- Another notation, Theta, which we use to describe running times of algorithms if the upper
+bound and lower bound is the same.
+
+---
+
+
+
+
+
+
+
+
+
+
